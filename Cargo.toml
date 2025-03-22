@@ -6,4 +6,7 @@ edition = "2024"
 [[bin]]
 name = "immutable_mutable"
 
+[[bin]]
+name = "data_types"
+
 [dependencies]
