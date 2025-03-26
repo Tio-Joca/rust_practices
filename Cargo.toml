@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [[bin]]
+name = "hello"
+
+[[bin]]
 name = "immutable_mutable"
 
 [[bin]]
@@ -11,5 +14,11 @@ name = "data_types"
 
 [[bin]]
 name = "some_functions"
+
+[[bin]]
+name = "function_demos"
+
+[[bin]]
+name = "loops"
 
 [dependencies]
