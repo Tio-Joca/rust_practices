@@ -189,3 +189,30 @@ pub fn factorial (value: i32) -> i128 {
         return result;
     }
 }
+
+//  Functions created for ownership.rs
+
+pub fn takes_ownership (words: String) {
+    println!("The word is '{}'.", words);
+}
+
+pub fn makes_copy (integer: i32) {
+    println!("The value is {}.", integer);
+}
+
+pub fn gives_ownership () -> String {
+    let output: String = String::from("String received by ownership transfer.");
+
+    return output;
+}
+
+pub fn takes_and_gives_back (a_string: String) -> String {
+    println!("{}\nThe data that contains the sentence above belonged to the words variable. But the ownership was transfered as argument to this function call.", a_string);
+    return a_string;
+}
+
+pub fn calculate_length (some_string: String) -> (String, usize) {
+    let length: usize = some_string.len();
+
+    return (some_string, length)
+}

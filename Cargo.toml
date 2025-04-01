@@ -21,4 +21,7 @@ name = "function_demos"
 [[bin]]
 name = "loops"
 
+[[bin]]
+name = "ownership"
+
 [dependencies]
