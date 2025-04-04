@@ -24,4 +24,7 @@ name = "loops"
 [[bin]]
 name = "ownership"
 
+[[bin]]
+name = "references_borrowing"
+
 [dependencies]

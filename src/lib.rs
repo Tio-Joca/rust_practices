@@ -216,3 +216,23 @@ pub fn calculate_length (some_string: String) -> (String, usize) {
 
     return (some_string, length)
 }
+
+//  Functions created for references_borrowing.rs
+
+pub fn calculate_length_using_reference (s: &String) -> usize {
+    return s.len();
+}
+
+pub fn change (s: &mut String) {
+    s.push_str(" world");
+}
+
+pub fn undo_change (s: &mut String) {
+    while s != "Hello" {
+        s.pop();
+    }
+}
+
+pub fn no_dangle () -> String {
+    return String::from("Rust is funny");
+}
