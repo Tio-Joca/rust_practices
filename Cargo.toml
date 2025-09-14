@@ -7,6 +7,9 @@ edition = "2024"
 name = "hello"
 
 [[bin]]
+name = "guessing_game"
+
+[[bin]]
 name = "immutable_mutable"
 
 [[bin]]
@@ -28,3 +31,4 @@ name = "ownership"
 name = "references_borrowing"
 
 [dependencies]
+rand = "0.8.5"
